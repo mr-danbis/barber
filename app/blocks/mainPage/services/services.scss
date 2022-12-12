@@ -1,7 +1,7 @@
-.services{
+.services {
     padding: 0 0 7rem 0;
 
-    &__title{
+    &__title {
         @include adaptiv-font(45, 20);
         text-transform: uppercase;
         font-weight: 700;
@@ -9,28 +9,31 @@
         text-align: center;
     }
 
-    &__list{
+    &__list {
         width: 70%;
         margin: auto;
     }
 
-    &__item{
+    &__item {
         display: flex;
         justify-content: space-between;
         font-family: 'Open Sans', sans-serif;
         text-transform: uppercase;
         font-weight: 300;
 
-        @include adaptiv-font(22,15);
-        &:not(:last-child){
+        @include adaptiv-font(22, 15);
+
+        &:not(:last-child) {
             margin-bottom: 30px;
         }
-        &-title{
+
+        &-title {
             width: 70%;
             padding-right: 2rem;
             font-weight: inherit;
         }
-        &-price{
+
+        &-price {
             color: #D98F38;
             font-weight: inherit;
 
@@ -39,9 +42,16 @@
 }
 
 @media (max-width: 1000px) {
-    .services{
-        &__list{
+    .services {
+        &__list {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 550px) {
+    .services {
+        padding: 0 0 4rem 0;
+
     }
 }
