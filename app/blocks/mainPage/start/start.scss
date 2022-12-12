@@ -27,6 +27,9 @@
     }
 
     &__btn {
+        width: fit-content;
+        text-align: center;
+        display: block;
         background-color: #000000;
         color: #FFFFFF;
         border-radius: 1rem;
@@ -60,7 +63,6 @@
 
 @media (max-width: 850px) {
     .start{
-        margin-top: 6rem;
         &__text{
             margin-bottom: 4rem;
         }

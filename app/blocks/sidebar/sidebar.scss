@@ -1,0 +1,37 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 450px;
+    z-index: 20;
+    background-color: black;
+    box-shadow: 8px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    transform: translateX(-200%);
+    transition: transform .7s;
+    &__nav{
+        margin-top: 40%;
+    }
+    &__close{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    &__link{
+        font-size: 40px;
+        color: white;
+    }
+
+}
