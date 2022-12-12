@@ -84,3 +84,12 @@
         }
     }
 }
+
+
+@media (max-width: 450px) {
+    .header{
+        &__logo{
+            width: 35%;
+        }
+    }
+}
